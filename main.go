@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	r := bootstrap.Start()
+	bootstrap.Start()
+	//do other code
 	fmt.Println(config.App.Name)
-	r.Run()
+	bootstrap.Router.Run()
 }
