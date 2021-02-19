@@ -14,11 +14,23 @@ func Start() {
 	//create new gin
 	Router = gin.Default()
 	//register routes
+	//if production go run in production
+	//if debug -> turn on debug
 	routes.Register(Router)
 	//logger
+	// 		log on file or any other platforms. log daily
 	//middleware
+		// exception handler
+		//response handler
+		// request response logger
+		//use uuid for uniq request
+		//formatter for error and json
 	//auth
+	//crypt with key in env
 	//cors
-	//csrf
+	//CSRF
 	//db
+	//		use GORM and postgres. use any database and multi connection. user select default connection. support multi connection
+	//load template
+	//add webpack vue bootstrap and ...
 }
