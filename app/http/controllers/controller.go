@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
+	"github.com/go-monsters/sulivan/resources/views"
 )
 
 func Ping(c *gin.Context) {
@@ -11,10 +11,7 @@ func Ping(c *gin.Context) {
 	})
 }
 
-
 func Welcome(c *gin.Context) {
-	c.HTML(http.StatusOK, "welcome.tmpl", gin.H{
-		"title": "Main website",
-	})
+	view := views.NewView("welcome", "welcome")
+	view.Render(c.Writer, nil)
 }
-
