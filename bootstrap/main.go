@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"github.com/gin-gonic/gin"
-	"sullivan/config"
-	"sullivan/routes"
+	"github.com/go-monsters/sulivan/config"
+	"github.com/go-monsters/sulivan/routes"
 )
 
 var Router *gin.Engine

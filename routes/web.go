@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"sullivan/app/http/controllers"
+	"github.com/go-monsters/sulivan/app/http/controllers"
 )
 
 func WebRoute(router *gin.Engine) {

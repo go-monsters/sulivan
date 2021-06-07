@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"sullivan/bootstrap"
-	"sullivan/config"
+	"github.com/go-monsters/sulivan/bootstrap"
+	"github.com/go-monsters/sulivan/config"
 )
 
 func main() {

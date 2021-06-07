@@ -1,4 +1,4 @@
-module sullivan
+module github.com/go-monsters/sulivan
 
 go 1.15
 
