@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"gorm.io/gorm"
 	"gorm.io/driver/sqlite"
+	"log"
 )
 
 var DB *gorm.DB
@@ -12,7 +13,7 @@ var DB *gorm.DB
 func InitDB() *gorm.DB {
 	db, err := gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
 	if err != nil {
-		fmt.Println("db err: (Init) ", err)
+		log.Fatal(err)
 		panic(err)
 	}
 	DB = db
@@ -22,12 +23,11 @@ func InitDB() *gorm.DB {
 func getDBConnection() *sql.DB {
 	sqlDB, err := DB.DB()
 	if err != nil {
-		fmt.Println("db err: (Init) ", err)
+		log.Fatal(err)
 		panic(err)
 	}
 	return sqlDB;
 }
 func CloseDb()  {
-	sqlDB, _ := DB.DB()
-	sqlDB.Close()
+	getDBConnection().Close()
 }

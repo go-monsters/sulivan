@@ -6,11 +6,11 @@ import (
 	"github.com/go-monsters/sulivan/app/http/controllers/auth"
 )
 
-func WebRoute(router *gin.Engine) {
-	router.GET("/", controllers.Welcome)
-	router.GET("/login", auth.GetLogin)
-	router.GET("/register", auth.GetRegister)
-	router.POST("/login", auth.Login)
-	router.POST("/register", auth.Register)
+func WebRoutes(r *gin.Engine) {
+	r.GET("/", controllers.Welcome)
+	r.GET("/login", auth.GetLogin)
+	r.GET("/register", auth.GetRegister)
+	r.POST("/login", auth.Login)
+	r.POST("/register", auth.Register)
 }
 

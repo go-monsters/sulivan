@@ -5,6 +5,6 @@ import (
 	"github.com/go-monsters/sulivan/app/http/controllers"
 )
 
-func ApiRoute(router *gin.Engine) {
+func ApiRoutes(router *gin.Engine) {
 	router.GET("/ping", controllers.Ping)
 }
