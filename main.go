@@ -7,7 +7,6 @@ import (
 
 func main() {
 	bootstrap.Start()
-	sqlDB, _ := database.DB.DB()
-	defer sqlDB.Close()
 	bootstrap.Router.Run()
+	defer database.CloseDb()
 }
