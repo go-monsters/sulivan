@@ -1,4 +1,4 @@
-# Sulivan. Gin Starter kit
+# Sulivan Gin Starter kit
 Gin Starter kit .Gin is a web framework written in Go (Golang).
 We create Starter kit like Laravel.
 
@@ -12,13 +12,32 @@ with go:
  go run main.go
 ```
 
-### Features
+## Features
 * Laravel base folder structure
 * .env config
 * View template
 * Authentication
+* Static file
+* Log
+* CORS
+* JWT
+* GROM
+* Migration
 
-## setup
-copy .env.example to .env
+## Setup
+copy .env.example to .env and install npm dependencies.
 
+ ```sh
+$ git clone git@github.com:go-monsters/sullivan.git
+$ cd sullivan
+$ cp .env.example .env
+
+# install npm dependencies
+$ npm install
+$ npm run dev
+```
+
+
+## External Packages 
+* Laravel Mix
  
