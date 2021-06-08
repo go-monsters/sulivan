@@ -2,7 +2,6 @@ package database
 
 import (
 	"database/sql"
-	"fmt"
 	"gorm.io/gorm"
 	"gorm.io/driver/sqlite"
 	"log"
